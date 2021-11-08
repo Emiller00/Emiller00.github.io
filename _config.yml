@@ -22,7 +22,7 @@ title: Elliott's Github Page
 email: ellmill00@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
         This is my personal space on the internet. I will use it to talk about my ideas about machine learning, ai, data, personal finance, my hobbies, and whatever float's my fancy. 
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: elliottchmiller
 github_username:  Emiller00
