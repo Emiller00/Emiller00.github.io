@@ -1,16 +1,5 @@
 ---
-layout: default
+layout: page
 ---
-
-<h1>Posts tagged "{{ page.tag }}"</h1>
-
-<ul>
-  {% assign tagged_posts = site.tags[page.tag] | sort: "date" | reverse %}
-  {% for post in tagged_posts %}
-    <li>
-      <span>{{ post.date | date: "%b %-d, %Y" }}</span> –
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
-
+<header class="page-intro"><a class="text-link back-link" href="{{ '/tags/' | relative_url }}"><span aria-hidden="true">←</span> All topics</a><p class="eyebrow">A thread from the notebook</p><h1><em>{{ page.title }}</em></h1><p>Posts and notes filed under {{ page.tag }}.</p></header>
+<div class="writing-layout"><ul class="post-list">{% assign tagged_posts = site.tags[page.tag] %}{% if tagged_posts %}{% assign tagged_posts = tagged_posts | sort: 'date' | reverse %}{% endif %}{% for post in tagged_posts %}{% include post-item.html post=post %}{% else %}<li>No published notes yet.</li>{% endfor %}</ul><aside class="topic-sidebar"><h3>Keep exploring.</h3>{% include topic-list.html %}<a class="text-link" href="{{ '/blog/' | relative_url }}">All writing <span aria-hidden="true">→</span></a></aside></div>

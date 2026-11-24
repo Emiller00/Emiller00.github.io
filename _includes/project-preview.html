@@ -1,0 +1,5 @@
+{% assign project = include.project %}
+<article class="project-preview">
+  <a class="project-cover tone-{{ project.tone }}" href="{{ '/projects/#' | append: project.id | relative_url }}" aria-label="Explore {{ project.short_title | escape }}"><span class="cover-label">{{ project.category }} <span aria-hidden="true">/</span> {{ include.number | default: '01' }}</span><img src="{{ '/assets/art/' | append: project.art | append: '.svg' | relative_url }}" alt="" width="600" height="360" loading="lazy"><span class="cover-action">Explore project {% include arrow.html %}</span></a>
+  <div class="project-preview-copy"><p class="eyebrow">{{ project.status }}</p><h3><a href="{{ '/projects/#' | append: project.id | relative_url }}">{{ project.short_title }}</a></h3><p>{{ project.summary }}</p></div>
+</article>

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "pytorch-generalization",
+    "title": "PyTorch Generalization",
+    "short_title": "PyTorch Generalization",
+    "category": "Research",
+    "status": "Research tooling",
+    "summary": "A PyTorch implementation for studying the gap between training and test performance.",
+    "problem": "Can the margins between class scores help predict how well a classifier will generalize?",
+    "approach": "Implemented the method from Yiding Jiang’s “Predicting the generalization gap in deep networks with margin distributions.”",
+    "impact": "Trained 35 CIFAR-100 models to benchmark the implementation.",
+    "art": "landscape",
+    "tone": "sage",
+    "repository": "https://github.com/Emiller00/pytorch_generalization"
+  },
+  {
+    "id": "adapter-monitoring",
+    "title": "Adapter Monitoring",
+    "status": "Experiment evidence and verifier",
+    "summary": "Two studies on using LoRA adapter weights to monitor model behavior.",
+    "problem": "Can adapter weights help detect violations missed by reasoning traces or flag adapters before they generate a response?",
+    "approach": "Score the weights of low-rank adaptation (LoRA) modules with GLNet. One experiment combines that score with a reasoning trace for each answer. The other scores each adapter before it answers.",
+    "impact": "Adding weights raised detection from 211 to 393 of 407 violations. In a separate screening test, GLNet flagged all 12 held-out policy adapters and none of the 12 benign adapters.",
+    "repository": "https://github.com/Emiller00/adapter-monitoring",
+    "posts": [
+      {
+        "title": "When Traces Miss, Can Weights Help?",
+        "url": "/blog/when-traces-miss-weights-can-help/"
+      },
+      {
+        "title": "Can You Screen a LoRA Adapter Before It Answers?",
+        "url": "/blog/weight-only-adapter-screening/"
+      }
+    ]
+  }
+]

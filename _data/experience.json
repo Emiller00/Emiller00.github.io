@@ -1,0 +1,35 @@
+[
+  {
+    "id": "cylitix",
+    "company": "Cylitix",
+    "role": "AI Engineer",
+    "dates": "April 2025 – Present",
+    "focus": "LLM agents, RAG & production ML",
+    "bullets": [
+      "Built an agentic technology-scouting system that retrieves, summarizes, and synthesizes evidence across document collections.",
+      "Led AI architecture, deployment, and monitoring on AWS and mentored junior engineers in ML development."
+    ]
+  },
+  {
+    "id": "digital-global-systems",
+    "company": "Digital Global Systems",
+    "role": "Senior Data Science Engineer",
+    "dates": "May 2024 – April 2025",
+    "focus": "RF analytics & signal processing",
+    "bullets": [
+      "Increased IQ demodulation throughput 10× through automation and achieved a 3.2× local speedup with multiprocessing.",
+      "Developed a CBRS interference deconfliction algorithm and secured stakeholder support for further development."
+    ]
+  },
+  {
+    "id": "blacksky",
+    "company": "BlackSky",
+    "role": "Machine Learning Engineer",
+    "dates": "October 2015 – April 2024",
+    "focus": "Satellite imagery, computer vision & NLP",
+    "bullets": [
+      "Optimized computer vision models for satellite-emulating hardware, achieving 10× faster inference, 4× smaller unquantized models, and a 64× smaller runtime.",
+      "Trained segmentation and rotated object detection models, deployed and maintained models on AWS, and benchmarked 15+ NLP models."
+    ]
+  }
+]

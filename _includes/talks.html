@@ -1,0 +1,1 @@
+<ul class="talk-list">{% for talk in site.data.talks %}<li>{{ talk.title }} <span>{{ talk.venue }}{% if talk.year != empty %} · {{ talk.year }}{% endif %}</span></li>{% endfor %}</ul>

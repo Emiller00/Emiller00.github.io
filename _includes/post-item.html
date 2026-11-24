@@ -1,0 +1,6 @@
+{% assign post = include.post %}
+{% assign search_tags = post.tags | join: ' ' %}
+<li class="post-item" {% if include.searchable %}data-post data-search="{{ post.title | append: ' ' | append: post.summary | append: ' ' | append: search_tags | escape }}"{% endif %}>
+  <div class="post-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %d, %Y' }}</time><span>{{ post.post_type | default: 'Post' }}</span></div>
+  <div class="post-item-copy"><h3><a href="{{ post.url | relative_url }}">{{ post.title }} {% include arrow.html %}</a></h3><p>{{ post.summary }}</p>{% include tag-list.html tags=post.tags %}</div>
+</li>

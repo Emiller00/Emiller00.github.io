@@ -1,0 +1,9 @@
+{% assign tag_items = include.tags | default: empty %}
+{% if tag_items and tag_items.size > 0 %}
+  <div class="tag-row">
+    {% for tag in tag_items %}
+      {% assign tag_slug = tag | slugify %}
+      <a class="tag-chip" href="{{ '/tags/' | append: tag_slug | append: '/' | relative_url }}">{{ tag }}</a>
+    {% endfor %}
+  </div>
+{% endif %}

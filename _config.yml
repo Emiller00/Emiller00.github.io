@@ -1,36 +1,50 @@
 title: "Elliott C. Miller"
-description: "Machine Learning Engineer – LLM systems, generalization, and GPU-accelerated AI."
+description: "ML engineer exploring weight-space learning, LLM systems, and agent architectures."
 url: "https://emiller00.github.io"
-github_username: "Emiller00"
-
+baseurl: ""
 theme: minima
+markdown: kramdown
+permalink: pretty
+future: false
 
 author:
   name: "Elliott C. Miller"
   email: "ellmill00@gmail.com"
   github: "Emiller00"
-  linkedin: "ellmill00"
-  location: " Washington, DC"
-  role: "Lead AI Engineer"
-  org: "Cylitix"
+  linkedin: "elliott-miller-00"
+  location: "Washington, DC"
+  role: "ML Engineer"
 
-# Show navigation links in the header
 header_pages:
   - index.md
-  - about.md
   - blog.md
+  - projects.md
 
-# Optional: social links for minima
-minima:
-  social_links:
-    github: Emiller00
-    linkedin: ellmill00
-    rss: rss
-
-markdown: kramdown
-permalink: pretty
-
-# Build settings
 plugins:
   - jekyll-feed
 
+sass:
+  style: compressed
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - vendor
+  - .bundle
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - scripts
+  - README.md
+  - CONTENT_TEMPLATE.md
+  - BLOG_POST_TEMPLATE.md
+  - Elliott_Miller_Resume.pdf
+  - messy_blog_ideas
+  - serve.sh
+  - symmetry-explainer
+  - test-results
