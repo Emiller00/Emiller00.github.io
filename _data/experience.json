@@ -7,7 +7,7 @@
     "focus": "LLM agents, RAG & production ML",
     "bullets": [
       "Built an agentic technology-scouting system that retrieves, summarizes, and synthesizes evidence across document collections.",
-      "Led AI architecture, deployment, and monitoring on AWS and mentored junior engineers in ML development."
+      "Led AI architecture, deployment, and monitoring on AWS."
     ]
   },
   {
@@ -18,7 +18,7 @@
     "focus": "RF analytics & signal processing",
     "bullets": [
       "Increased IQ demodulation throughput 10× through automation and achieved a 3.2× local speedup with multiprocessing.",
-      "Developed a CBRS interference deconfliction algorithm and secured stakeholder support for further development."
+      "Developed a CBRS interference deconfliction algorithm using Gaussian mixtures, graph coloring, and convolutions."
     ]
   },
   {
@@ -28,7 +28,9 @@
     "dates": "October 2015 – April 2024",
     "focus": "Satellite imagery, computer vision & NLP",
     "bullets": [
-      "Optimized computer vision models for satellite-emulating hardware, achieving 10× faster inference, 4× smaller unquantized models, and a 64× smaller runtime.",
+      "Optimized computer vision models for satellite-emulating hardware to run 10× faster.",
+      "Made the unquantized models 4× smaller.",
+      "Made the runtime 64× smaller on that hardware.",
       "Trained segmentation and rotated object detection models, deployed and maintained models on AWS, and benchmarked 15+ NLP models."
     ]
   }

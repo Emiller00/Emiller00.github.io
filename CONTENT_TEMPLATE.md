@@ -41,7 +41,7 @@ The `data-symmetry-demo` containers mount the interactive demos and provide fall
 April 2025 – Present · LLM agents, RAG & production ML
 
 - Built an agentic technology-scouting system that retrieves, summarizes, and synthesizes evidence across document collections.
-- Led AI architecture, deployment, and monitoring on AWS and mentored junior engineers in ML development.
+- Led AI architecture, deployment, and monitoring on AWS.
 
 ### Digital Global Systems — Senior Data Science Engineer
 
@@ -50,14 +50,16 @@ May 2024 – April 2025 · RF analytics & signal processing
 - Automated IQ demodulation for 10× throughput; multiprocessing delivered a 3.2× local speedup.
 - Extended batch processing across Physical Cell IDs and debugged the C++ demodulation pipeline.
 - Prototyped anomaly detection, service classification, and spectrum visualizations.
-- Developed a CBRS interference deconfliction algorithm using Gaussian mixtures, graph coloring, and convolutions; secured stakeholder support for further development.
+- Developed a CBRS interference deconfliction algorithm using Gaussian mixtures, graph coloring, and convolutions.
 
 ### BlackSky — Machine Learning Engineer
 
 October 2015 – April 2024 · Satellite imagery, computer vision & NLP
 
 - Built architecture-independent benchmarks and trained segmentation and rotated object detection models with PyTorch Lightning and ClearML.
-- Deployed models on AWS and satellite-emulating hardware, achieving 10× faster inference, 4× smaller unquantized models, and a 64× smaller runtime.
+- Optimized computer vision models for satellite-emulating hardware to run 10× faster.
+- Made the unquantized models 4× smaller.
+- Made the runtime 64× smaller on that hardware.
 - Trained more than 15 NLP models and built modular data collection, training, and benchmarking pipelines.
 - Managed data labeling and built text clustering and geospatial streaming microservices with AWS SQS and DynamoDB.
 

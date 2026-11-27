@@ -25,7 +25,7 @@ See [CONTENT_TEMPLATE.md](CONTENT_TEMPLATE.md) for the editing guide and content
 
 ## Interactive symmetry post
 
-The supplied standalone explainer remains in `symmetry-explainer/`. Its `src/BlogDemos.tsx` entry mounts the four opening demos in the symmetry introduction. The production bundle is in `assets/symmetry/`; include it when committing changes so GitHub Pages only needs to run Jekyll. React loads on the symmetry introduction. Text and fallback descriptions work without JavaScript.
+The standalone explainer source lives in a separate Git checkout at `symmetry-explainer/`. Its `src/BlogDemos.tsx` entry mounts six demos in the symmetry introduction. Commit the generated bundle in `assets/symmetry/` so GitHub Pages can build the site with Jekyll. The article and fallback descriptions work without JavaScript.
 
 After changing interactive code:
 

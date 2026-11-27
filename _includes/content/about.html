@@ -3,9 +3,10 @@
   <div class="intro-copy">
     <p class="eyebrow">{{ site.author.role }} <span class="label-divider">/</span> {{ site.author.location }}</p>
     <h1 id="intro-title">Hi, I’m Elliott.</h1>
-    <p>I’m a machine learning engineer with a background in physics. I build retrieval-augmented generation (RAG) systems and LLM agents that help people find and synthesize evidence across documents. My earlier work spans satellite imagery and radio signals.</p>
-    <p>My independent research asks what a neural network’s weights can tell us about its behavior on new inputs.</p>
-    <div class="intro-links"><a href="{{ '/blog/' | relative_url }}">Read my blog <span aria-hidden="true">↗</span></a><a href="{{ '/projects/#adapter-monitoring' | relative_url }}">Adapter Monitoring <span aria-hidden="true">↗</span></a><a href="{{ '/projects/' | relative_url }}">Explore my projects <span aria-hidden="true">↗</span></a></div>
+    <p>Physics was my first love. Studying it taught me to ask what we know, what we’re assuming, and what we can test. Those questions still guide my work as a machine learning engineer. I find meaning in figuring out how data can help people make decisions that matter in their lives.</p>
+    <p>These days I build tools for technology scouting. Earlier, I trained models to spot objects in satellite images and made them run faster on hardware designed to mimic a satellite’s onboard computer. I also worked with radio signals, developing an algorithm to reduce interference between transmissions.</p>
+    <p>I do independent research because I love spending time with questions that fascinate me. One I keep coming back to is how a neural network with so many parameters can make good predictions on data it’s never seen. Lately I’ve been testing how much a network’s weights can tell us about how it will behave on new inputs.</p>
+    <div class="intro-links"><a href="{{ '/blog/' | relative_url }}">Read my blog <span aria-hidden="true">↗</span></a><a href="{{ '/projects/' | relative_url }}">Explore my projects <span aria-hidden="true">↗</span></a></div>
   </div>
 </section>
 <section class="experience-block" id="work-history" aria-labelledby="experience-title">
@@ -18,6 +19,6 @@
   {% endfor %}</div>
 </section>
 <section class="home-destinations" aria-label="Writing and projects">
-  <div class="destination"><p class="eyebrow">01 / Blog</p><h2>Notes &amp; explanations</h2><p>Explore symmetry through interactive examples, or follow the experiments on what adapter weights reveal about a model.</p>{% assign latest = site.posts | first %}{% if latest %}<a class="text-link" href="{{ latest.url | relative_url }}">{{ latest.title }} {% include arrow.html %}</a>{% else %}<a class="text-link" href="{{ '/blog/' | relative_url }}">Read the blog {% include arrow.html %}</a>{% endif %}</div>
+  <div class="destination"><p class="eyebrow">01 / Blog</p><h2>Notes &amp; explanations</h2><p>The posts include an interactive introduction to symmetry and two experiments on whether adapter weights reveal behavior that the trace hides.</p>{% assign latest = site.posts | first %}{% if latest %}<a class="text-link" href="{{ latest.url | relative_url }}">{{ latest.title }} {% include arrow.html %}</a>{% else %}<a class="text-link" href="{{ '/blog/' | relative_url }}">Read the blog {% include arrow.html %}</a>{% endif %}</div>
   <div class="destination"><p class="eyebrow">02 / Projects</p><h2>Independent research</h2><p>Experiments in generalization, LoRA adapters, and weight-space learning.</p><a class="text-link" href="{{ '/projects/' | relative_url }}">Browse my projects {% include arrow.html %}</a></div>
 </section>
